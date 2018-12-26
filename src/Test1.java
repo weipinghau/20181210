@@ -1,7 +1,5 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class Test1 {
 
@@ -23,9 +21,16 @@ public class Test1 {
 //        System.out.println(list);
 
 
-        String planIds = "7879899999100489,6787999140086";
+       /* String planIds = "7879899999100489,6787999140086";
         String str = "99910086";
-        System.out.println(planIds.indexOf(str) == -1);
+        System.out.println(planIds.indexOf(str) == -1);*/
+
+        Calendar cal =  Calendar.getInstance();
+        Date date = new Date();
+        SimpleDateFormat sf = new SimpleDateFormat("YYYYYMMDDHHMMSS");
+        cal.setTime(date);
+        cal.add(Calendar.DATE,-2);
+        System.out.println(cal.getTime());
     }
 
 }
