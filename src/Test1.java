@@ -25,12 +25,48 @@ public class Test1 {
         String str = "99910086";
         System.out.println(planIds.indexOf(str) == -1);*/
 
-        Calendar cal =  Calendar.getInstance();
+        /*Calendar cal =  Calendar.getInstance();
         Date date = new Date();
         SimpleDateFormat sf = new SimpleDateFormat("YYYYYMMDDHHMMSS");
         cal.setTime(date);
         cal.add(Calendar.DATE,-2);
-        System.out.println(cal.getTime());
+        System.out.println(cal.getTime());*/
+        StaticF staticF = new StaticF();
+        staticF.setName("123");
+        System.out.println("wph:"+staticF.wph());
+    }
+
+}
+class StaticF {
+    static{
+        System.out.println("静态块");
+    }
+
+    public StaticF() {
+        System.out.println("无参构造器");
+    }
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String wph(){
+        try{
+            int a = 1;
+            int b = 1;
+            double s = a/b;
+            return "s   :"+Double.toString(s);
+        }catch (Exception e){
+            System.out.println("Exception");
+            e.printStackTrace();
+        }finally {
+            System.out.println("finally");
+        }
+        return "name"+name;
     }
 
 }
