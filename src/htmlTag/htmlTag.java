@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class htmlTag {
-    static String reg = "<[a-zA-Z]+.*?>([\\s\\S]*?)</[a-zA-Z]*>";
+    static String reg = "<[a-zA-Z]+.*?>([\\s\\S]*?)</[a-zA-Z]*>";//转义字符双斜杠
     static String reg2 = "<[a-zA-Z]+.*?>";
     static String reg3= "/<[^>]+>/gim";
     public static void main(String[] args) {
