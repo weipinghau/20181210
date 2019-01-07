@@ -31,9 +31,11 @@ public class Test1 {
         cal.setTime(date);
         cal.add(Calendar.DATE,-2);
         System.out.println(cal.getTime());*/
-        StaticF staticF = new StaticF();
+        /*StaticF staticF = new StaticF();
         staticF.setName("123");
-        System.out.println("wph:"+staticF.wph());
+        System.out.println("wph:"+staticF.wph());*/
+        System.out.println("123abc".indexOf("")==-1);
+        System.out.println("123abc".indexOf("a"));
     }
 
 }
