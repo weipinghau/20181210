@@ -69,6 +69,8 @@ class StaticF {
             System.out.println("finally");
         }
         return "name"+name;
+//        T_QM_ZB_AUTO_RT_DTL_NOREW
+//        T_QM_ZB_AUTO_CHECKRESULT_NOREW
     }
 
 }
